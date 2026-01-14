@@ -1,4 +1,4 @@
-FROM node:22-bullseye
+FROM node:22-bookworm
 
 # Install dependencies for yt-dlp (Python) and audio processing (FFmpeg)
 RUN apt-get update && apt-get install -y \
