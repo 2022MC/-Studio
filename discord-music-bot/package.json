@@ -1,0 +1,29 @@
+{
+    "name": "discord-music-bot",
+    "version": "1.0.0",
+    "description": "Discord Music Bot with DisTube + yt-dlp",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "node --watch src/index.js"
+    },
+    "dependencies": {
+        "@discordjs/voice": "^0.19.0",
+        "@distube/soundcloud": "^2.0.4",
+        "@distube/spotify": "^2.0.2",
+        "@distube/youtube": "^1.0.4",
+        "@distube/yt-dlp": "^2.0.1",
+        "@snazzah/davey": "^0.1.9",
+        "discord.js": "^14.14.1",
+        "distube": "^5.0.2",
+        "dotenv": "^16.3.1",
+        "ffmpeg-static": "^5.2.0",
+        "is-ci": "^3.0.1",
+        "libsodium-wrappers": "^0.7.13",
+        "opusscript": "^0.0.8",
+        "play-dl": "^1.9.7"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
