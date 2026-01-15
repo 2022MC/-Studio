@@ -1,4 +1,16 @@
+const http = require('http');
 require('dotenv').config();
+
+// Simple HTTP Server for Render Health Check
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.write('Discord Bot is Alive!');
+  res.end();
+});
+
+server.listen(process.env.PORT || 3000, () => {
+  console.log(`Web server running on port ${process.env.PORT || 3000}`);
+});
 const { Client, GatewayIntentBits, Collection, EmbedBuilder, REST, Routes, SlashCommandBuilder } = require('discord.js');
 const { DisTube } = require('distube');
 const { SpotifyPlugin } = require('@distube/spotify');

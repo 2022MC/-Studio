@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: discord-music-bot
+    env: docker
+    plan: free
+    branch: main  # Change this if your branch is master
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+    startCommand: npm start
